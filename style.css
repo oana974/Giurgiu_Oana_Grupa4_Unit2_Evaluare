@@ -1,0 +1,100 @@
+/* Stiluri generale */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+	padding: 40px;
+}
+
+/* Titluri secțiuni */
+h2 {
+    color: #4682B4;
+    font-style: italic;
+	text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* Secțiuni */
+section {
+    padding: 15px;
+}
+
+/* Tabel */
+table {
+    border-collapse: separate; /* Permite spațiere între celule */
+    border-spacing: 1px; /* Spațiu alb între celule */
+    margin: 20px 0;
+    border: 1px solid #483D8B; /* Bordura tabelului */
+    background-color: white; /* Fundal alb pentru tabel */
+}
+
+table th, table td {
+    border: 1px solid #483D8B; /* Bordura celulelor */
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9em;
+    background-color: white; /* Fundal alb pentru celule */
+}
+
+/* Imagini */
+#structura img, .resource-images img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    display: inline-block;
+    opacity: 0.9; /* Opacitate */
+    transition: opacity 0.3s ease; /* Tranziție la hover */
+}
+
+#structura img:hover, .resource-images img:hover {
+    opacity: 1; /* Crește opacitatea la hover */
+}
+
+/* Slide-show */
+.slide-container {
+    display: none; /* Inițial ascuns */
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.slide-container img {
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-container img.active {
+    opacity: 1; /* Imagine activă */
+}
+
+.nume-header {
+    background-color: #FFDAB9; /* Portocaliu deschis */
+    padding: 20px; /* Spațiu în interiorul chenarului */
+    border: 6px solid #000000; /* Chenar portocaliu mai închis */
+    width: 100%; /* Să se întindă pe toată lățimea paginii */
+    box-sizing: border-box; /* Include padding-ul în dimensiunea totală */
+}
+.nume-header h1 {
+    margin: 0; /* Elimină marginile implicite */
+}
+
+.sectiune-chenar {
+    border: 3px solid red; /* Chenar roșu */
+    background-color: #ADD8E6; /* Albastru deschis */
+    padding: 20px; /* Spațiu în interiorul chenarului */
+    box-sizing: border-box; /* Asigură-te că padding-ul este inclus în dimensiunea totală */
+	width: fit-content;
+}
+
+.lista-literala {
+    list-style-type: lower-alpha; /* Folosește litere mici (a, b, c, d) */
+    margin-left: 20px; /* Adaugă o indentare pentru listă */
+    padding-left: 0; /* Elimină paddingul implicit */
+}
+
